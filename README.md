@@ -45,11 +45,24 @@ npm run build
 npm run start
 ```
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
 ### Run Tests
 While your application is running on `localhost:3000`, you can run cypress tests in a different tab/window of your terminal with the following command:
 ```bash
 npm run cypress
 ```
+
+The local Cypress Dashboard will launch, then:
+1. Click on the E2E Testing box
+
+2. Choose a browser to run tests in (e.g., Chrome) and click the green "Start E2E Testing in [Chrome]" button. A new window will open
+
+3. Double click on the `app.cy.js` test under E2E specs. **NOTE** What closely as the tests will start to run automatically and you'll have a visal of the browser on the right of the screen.
+
+4. All the test should pass and you can expand the Navigation tests to see details for each
+
+5. If you want to re-run the tests, find the refresh icon at the top of the page on the far right of the "Specs" Header.
 
 ## Assumptions
 
