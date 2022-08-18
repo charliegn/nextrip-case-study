@@ -58,7 +58,9 @@ The local Cypress Dashboard will launch, then:
 
 2. Choose a browser to run tests in (e.g., Chrome) and click the green "Start E2E Testing in [Chrome]" button. A new window will open
 
-3. Double click on the `app.cy.js` test under E2E specs. **NOTE** What closely as the tests will start to run automatically and you'll have a visal of the browser on the right of the screen.
+3. Double click on the `app.cy.js` test under E2E specs.
+
+   **NOTE** Watch closely as the tests will start to run automatically and you'll have a visal of the browser on the right of the screen and test running on the left.
 
 4. All the test should pass and you can expand the Navigation tests to see details for each
 
