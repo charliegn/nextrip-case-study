@@ -2,33 +2,62 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+### Download source code
+
+Locate the green "< > Code" button near the upper right of this page and choice one of the following options:
+#### OPTION 1: Clone repository
+
+1. Choose your clone string type: HTTPS or SSH
+
+2. Copy choosen string type
+
+3. In your terminal, navigate the directory you want the projects files to be stored and enter the following:
+
+    ```bash
+    # This example uses the SSH string
+    git clone git@github.com:charliegn/nextrip-case-study.git
+    ```
+
+4. Change into the cloned project folder and install the dependencies using `npm install`
+
+5. Run the application as development or production server using the following instructions below
+
+#### OPTION 2: Download ZIP file
+
+1. [Download zip file](https://github.com/charliegn/nextrip-case-study/archive/refs/heads/main.zip) of this repostitory and extract it in a directory of your choice
+
+2. From your terminal, go into the extracted folder and install the dependancies using `npm install`
+
+3. Run the application as development or production server using the following instructions below
+
+### Run as development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Build and run as production server
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+npm run build
+npm run start
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Run Tests
+While your application is running on `localhost:3000`, you can run cypress tests in a different tab/window of your terminal with the following command:
+```bash
+npm run cypress
+```
 
-## Learn More
+## Assumptions
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- The functionality was the goal and not making the page look exactly like the actual [NexTrip](https://www.metrotransit.org/nextrip) page.
+- Departure time and recurring API call to get updates on departure times was not required
+- The option to search "By stop #" was not required
+- Routing and UX around direct routing to a list of stops just needed to match that of the [NexTrip](https://www.metrotransit.org/nextrip) page.
+- Branding and stying implementation is up to the distruction of the application's author
+- Regarding "The steps to execute provided tests" requirement
+  - Implementing end-to-end (E2E) tests satisfies this requirement. This requirement does not explicitly mention "unit tests" and thus unit testing, integreation testing and/or E2E testing are all viable options.
+  - The use of "tests" (plural) means more then one (1), thus two (2) tests or more satisfies this requirement.
