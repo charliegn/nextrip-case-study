@@ -30,7 +30,7 @@ Locate the green "< > Code" button near the upper right of this page and choice 
 
 3. Run the application as development or production server using the following instructions below
 
-### Run as development server:
+## Run as development server:
 
 ```bash
 npm run dev
@@ -38,7 +38,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Build and run as production server
+## Build and run as production server
 
 ```bash
 npm run build
@@ -47,13 +47,28 @@ npm run start
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Run Tests
-While your application is running on `localhost:3000`, you can run cypress tests in a different tab/window of your terminal with the following command:
+## Run Cypress Tests
+
+There are two (2) different ways to run Cypress. One is headless in the terminal and the other is using Cypress Dashboard locally.
+
+### Run tests using headless mode
+
+While your application is running on `localhost:3000`, open a different tab in your terminal. Then run the following command:
+
+```bash
+npx cypress run
+```
+
+### Run tests using Cypress Dashboard
+
+While your application is running on `localhost:3000`, open a different tab in your terminal. Then run the following command:
+
 ```bash
 npm run cypress
 ```
 
 The local Cypress Dashboard will launch, then:
+
 1. Click on the E2E Testing box
 
 2. Choose a browser to run tests in (e.g., Chrome) and click the green "Start E2E Testing in [Chrome]" button. A new window will open
